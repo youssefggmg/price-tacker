@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Context
 
-## Getting Started
+## EcomData Overview
 
-First, run the development server:
+EcomData is a startup specializing in e-commerce solutions. The company is seeking a full-stack developer to help develop a web application based on a freemium business model. This app will allow users to track price drops of specific products on various e-commerce sites.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## User Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Registration and Authentication:** Users can sign up and log in.
+- **Product Tracking:** Users can add a limited number of products to track for free.
+- **Price Drop Notifications:** Users receive email notifications when a price drop is detected.
+- **Price History Display:** Users can view price history for each tracked product.
+- **Freemium Model Implementation:** Premium features include unlimited product tracking and ad-free experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The goal is to attract a large user base and build a solid foundation before seeking investor funding to grow the business.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Application Requirements
 
-## Learn More
+- **Extensibility:** The application should be designed to add new e-commerce platforms without major modifications to the source code.
 
-To learn more about Next.js, take a look at the following resources:
+## Main Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **User Registration and Authentication**
+2. **Add New Products to Track**
+3. **Price History Display for Each Tracked Product**
+4. **Price Drop Notifications**
+5. **Freemium Model Implementation**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Design
 
-## Deploy on Vercel
+- **Create a Design System:** Develop a consistent visual style.
+- **Create High-Fidelity Prototypes:** Develop interactive mockups that closely resemble the final application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Pages Development with Next.js:** Registration, Login, Home, Upgrade (from free to premium), Dashboard, and Add Product pages.
+- **Use TailwindCSS:** For styling the pages.
+- **Component Framework:** Use a component framework of your choice.
+
+## Backend
+
+- **NextAuth Integration:** For authentication and session management.
+- **API Configuration with Next.js API Routes**
+- **Web Scraping:** Regularly scrape e-commerce sites to retrieve product prices.
+- **Database Operations:** Use Prisma or Mongoose for database interactions with MySQL/MongoDB.
+- **Database Modeling and Creation**
+
+## Technologies to Use
+
+- **Next.js:** A framework for server-side rendering based on React.
+- **Programming Language:** TypeScript
+- **NextAuth:** A complete authentication solution for Next.js applications (900k weekly downloads).
+- **Data Validation:** Zod (10M weekly downloads).
+- **Form Management:** react-hook-form, providing hooks for managing form state and integrating with data validators (5M weekly downloads).
+- **ORM/ODM:** Prisma or Mongoose for interacting with MySQL or MongoDB databases.
+- **Database:** MySQL or MongoDB
+- **TailwindCSS:** A framework for designing and styling pages. Use the @apply directive to include predefined TailwindCSS utility classes directly in SCSS files.
+- **Sass:** A CSS preprocessor to add advanced functionalities like variables, nesting, and mixins.
